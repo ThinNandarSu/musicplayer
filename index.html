@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Music Player</title>
+    <link rel="icon" href="images/icon.jfif" type="image/png" />
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/44a29f837f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="screen">
+        <input type="checkbox" name="check" id="magicButton" value="None">
+        <label for="magicButton" class="main"></label>
+
+        <div class="coverImage"></div>
+        <div class="bodyPlayer"></div>
+
+        <table class="list">
+            <!-- js  -->
+        </table>
+
+        <div class="info">
+            <h4>TODAY HIT</h4>
+        </div>
+
+    </section>
+    <div class="wrapper">
+        <div class="top-bar">
+            <span>My Playlist</span>
+        </div>
+        <div class="img-area">
+            <img src="" alt="">
+        </div>
+        <div class="song-details">
+            <p class="name"></p>
+            <p class="artist"></p>
+        </div>
+        <div class="progress-area">
+            <div class="progress-bar">
+                <audio id="main-audio" src=""></audio>
+            </div>
+            <div class="song-timer">
+                <span class="current-time">0:00</span>
+                <span class="max-duration">0:00</span>
+            </div>
+        </div>
+        <div class="controls">
+            <i id="prev" class="material-icons">skip_previous</i>
+            <div class="play-pause">
+                <i class="material-icons play">play_arrow</i>
+            </div>
+            <i id="next" class="material-icons">skip_next</i>
+            <i id="more-music" class="fas fa-headphones-alt material-icons"></i>
+        </div>
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i class="list material-icons">queue_music</i>
+                    <span>Favorite List</span>
+                </div>
+                <i id="close" class="material-icons">close</i>
+            </div>
+            <ul>
+                <!-- js  -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/music-list.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+
+</body>
+
+</html>
